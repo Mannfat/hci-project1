@@ -1,0 +1,111 @@
+/* Jakob's Law & Spatial Memory: familiar layout and fixed nav */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f8f9fa;
+}
+
+/* Header and Navigation */
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 1rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+/* No-style anchor links (like logo) */
+.no-style {
+  text-decoration: none;
+  color: white;
+}
+
+.no-style:hover,
+.no-style:visited {
+  color: white;
+}
+
+/* Icon Cart */
+.icon-cart {
+  position: relative;
+  display: flex;
+  align-items: center;  /* Centers the SVG and span vertically */
+  justify-content: flex-end;  /* Moves the SVG to the right side */
+  width: 100%;  /* Ensures the container takes the full width of its parent */
+}
+
+.icon-cart svg {
+  width: 30px;
+}
+
+header .icon-cart span {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  font-size: 12px;
+}
+
+
+/* Main Content */
+main {
+  padding: 2rem;
+}
+
+/* Product Card */
+.product {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin: 1rem 0;
+  background: white;
+  border-radius: 5px;
+}
+
+/* Add to Cart Button */
+.add-to-cart-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #218838;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
